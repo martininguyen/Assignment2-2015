@@ -16,6 +16,7 @@ var app = express();
 
 //local dependencies
 var models = require('./models');
+var local = false;
 
 //client id and client secret here, taken from .env
 dotenv.load();

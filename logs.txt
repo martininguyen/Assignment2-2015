@@ -1,101 +1,101 @@
-2015-05-02T04:18:51.207480+00:00 app[web.1]: npm ERR! 
-2015-05-02T04:18:51.612799+00:00 heroku[web.1]: Process exited with status 143
-2015-05-02T04:18:52.151309+00:00 heroku[web.1]: Process exited with status 1
-2015-05-02T04:18:52.158678+00:00 heroku[web.1]: State changed from starting to crashed
-2015-05-02T04:18:52.160761+00:00 heroku[web.1]: State changed from crashed to starting
-2015-05-02T04:18:54.512331+00:00 heroku[web.1]: Starting process with command `npm start`
-2015-05-02T04:18:56.347505+00:00 app[web.1]: Recommending WEB_CONCURRENCY=1
-2015-05-02T04:18:56.347485+00:00 app[web.1]: Detected 512 MB available memory, 512 MB limit per process (WEB_MEMORY)
-2015-05-02T04:18:56.864436+00:00 app[web.1]: 
-2015-05-02T04:18:56.793499+00:00 app[web.1]: 
-2015-05-02T04:18:56.864746+00:00 app[web.1]: /app/app.js:261
-2015-05-02T04:18:56.793506+00:00 app[web.1]: > node app.js
-2015-05-02T04:18:56.888268+00:00 app[web.1]: npm ERR! mywebapp@0.0.1 start: `node app.js`
-2015-05-02T04:18:56.793504+00:00 app[web.1]: > mywebapp@0.0.1 start /app
-2015-05-02T04:18:56.865014+00:00 app[web.1]:   });
-2015-05-02T04:18:56.888601+00:00 app[web.1]: npm ERR! Exit status 8
-2015-05-02T04:18:56.888869+00:00 app[web.1]: npm ERR! 
-2015-05-02T04:18:56.870611+00:00 app[web.1]: SyntaxError: Unexpected token )
-2015-05-02T04:18:56.793507+00:00 app[web.1]: 
-2015-05-02T04:18:56.870624+00:00 app[web.1]:     at startup (node.js:119:16)
-2015-05-02T04:18:56.865019+00:00 app[web.1]:    ^
-2015-05-02T04:18:56.890208+00:00 app[web.1]: npm ERR! not with npm itself.
-2015-05-02T04:18:56.870616+00:00 app[web.1]:     at Module._compile (module.js:439:25)
-2015-05-02T04:18:56.890448+00:00 app[web.1]: npm ERR! Tell the author that this fails on your system:
-2015-05-02T04:18:56.870618+00:00 app[web.1]:     at Object.Module._extensions..js (module.js:474:10)
-2015-05-02T04:18:56.889459+00:00 app[web.1]: npm ERR! Failed at the mywebapp@0.0.1 start script.
-2015-05-02T04:18:56.870621+00:00 app[web.1]:     at Function.Module._load (module.js:312:12)
-2015-05-02T04:18:56.870619+00:00 app[web.1]:     at Module.load (module.js:356:32)
-2015-05-02T04:18:56.870623+00:00 app[web.1]:     at Function.Module.runMain (module.js:497:10)
-2015-05-02T04:18:56.891239+00:00 app[web.1]: npm ERR!     npm owner ls mywebapp
-2015-05-02T04:18:56.870626+00:00 app[web.1]:     at node.js:935:3
-2015-05-02T04:18:56.881325+00:00 app[web.1]: 
-2015-05-02T04:18:56.891592+00:00 app[web.1]: npm ERR! System Linux 3.13.0-49-generic
-2015-05-02T04:18:56.889960+00:00 app[web.1]: npm ERR! This is most likely a problem with the mywebapp package,
-2015-05-02T04:18:56.890938+00:00 app[web.1]: npm ERR!     node app.js
-2015-05-02T04:18:56.891123+00:00 app[web.1]: npm ERR! You can get their info via:
-2015-05-02T04:18:56.891424+00:00 app[web.1]: npm ERR! There is likely additional logging output above.
-2015-05-02T04:18:56.891781+00:00 app[web.1]: npm ERR! command "/app/.heroku/node/bin/node" "/app/.heroku/node/bin/npm" "start"
-2015-05-02T04:18:56.891942+00:00 app[web.1]: npm ERR! cwd /app
-2015-05-02T04:18:56.892216+00:00 app[web.1]: npm ERR! node -v v0.10.38
-2015-05-02T04:18:56.892394+00:00 app[web.1]: npm ERR! npm -v 1.4.28
-2015-05-02T04:18:56.894772+00:00 app[web.1]: npm ERR! Additional logging details can be found in:
-2015-05-02T04:18:56.892542+00:00 app[web.1]: npm ERR! code ELIFECYCLE
-2015-05-02T04:18:56.894579+00:00 app[web.1]: npm ERR! 
-2015-05-02T04:18:56.894817+00:00 app[web.1]: npm ERR!     /app/npm-debug.log
-2015-05-02T04:18:56.895084+00:00 app[web.1]: npm ERR! not ok code 0
-2015-05-02T04:18:57.674898+00:00 heroku[web.1]: State changed from starting to crashed
-2015-05-02T04:18:57.657988+00:00 heroku[web.1]: Process exited with status 1
-2015-05-02T04:19:11.901719+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/auth/instagram" host=cogsmediacount.herokuapp.com request_id=5aa1ff44-53a8-4ab9-8fc4-3fb2b47c81f0 fwd="66.75.37.251" dyno= connect= service= status=503 bytes=
-2015-05-02T04:19:14.638688+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=cogsmediacount.herokuapp.com request_id=eb7fc5c1-3ce5-4350-b036-b1ab8c6a97bc fwd="66.75.37.251" dyno= connect= service= status=503 bytes=
-2015-05-02T04:19:16.741999+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=cogsmediacount.herokuapp.com request_id=04c15196-87ad-4daf-8153-7327147bd900 fwd="66.75.37.251" dyno= connect= service= status=503 bytes=
-2015-05-02T04:19:18.236616+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=cogsmediacount.herokuapp.com request_id=4e380a08-1a8f-4858-b77d-6a7e85647d24 fwd="66.75.37.251" dyno= connect= service= status=503 bytes=
-2015-05-02T04:20:33.719848+00:00 heroku[web.1]: State changed from crashed to starting
-2015-05-02T04:20:35.128373+00:00 heroku[web.1]: Starting process with command `npm start`
-2015-05-02T04:20:36.162381+00:00 app[web.1]: Detected 512 MB available memory, 512 MB limit per process (WEB_MEMORY)
-2015-05-02T04:20:36.162401+00:00 app[web.1]: Recommending WEB_CONCURRENCY=1
-2015-05-02T04:20:36.572600+00:00 app[web.1]: 
-2015-05-02T04:20:36.572605+00:00 app[web.1]: > mywebapp@0.0.1 start /app
-2015-05-02T04:20:36.572606+00:00 app[web.1]: > node app.js
-2015-05-02T04:20:36.572607+00:00 app[web.1]: 
-2015-05-02T04:20:36.638484+00:00 app[web.1]:   });
-2015-05-02T04:20:36.638488+00:00 app[web.1]:    ^
-2015-05-02T04:20:36.637951+00:00 app[web.1]: 
-2015-05-02T04:20:36.643534+00:00 app[web.1]:     at Module._compile (module.js:439:25)
-2015-05-02T04:20:36.643529+00:00 app[web.1]: SyntaxError: Unexpected token )
-2015-05-02T04:20:36.643537+00:00 app[web.1]:     at Module.load (module.js:356:32)
-2015-05-02T04:20:36.643535+00:00 app[web.1]:     at Object.Module._extensions..js (module.js:474:10)
-2015-05-02T04:20:36.643538+00:00 app[web.1]:     at Function.Module._load (module.js:312:12)
-2015-05-02T04:20:36.643539+00:00 app[web.1]:     at Function.Module.runMain (module.js:497:10)
-2015-05-02T04:20:36.643540+00:00 app[web.1]:     at startup (node.js:119:16)
-2015-05-02T04:20:36.643542+00:00 app[web.1]:     at node.js:935:3
-2015-05-02T04:20:36.648572+00:00 app[web.1]: 
-2015-05-02T04:20:36.655474+00:00 app[web.1]: npm ERR! Tell the author that this fails on your system:
-2015-05-02T04:20:36.654474+00:00 app[web.1]: npm ERR! Exit status 8
-2015-05-02T04:20:36.654279+00:00 app[web.1]: npm ERR! mywebapp@0.0.1 start: `node app.js`
-2015-05-02T04:20:36.655282+00:00 app[web.1]: npm ERR! This is most likely a problem with the mywebapp package,
-2015-05-02T04:20:36.655754+00:00 app[web.1]: npm ERR!     node app.js
-2015-05-02T04:20:36.655381+00:00 app[web.1]: npm ERR! not with npm itself.
-2015-05-02T04:20:36.655009+00:00 app[web.1]: npm ERR! Failed at the mywebapp@0.0.1 start script.
-2015-05-02T04:20:36.638236+00:00 app[web.1]: /app/app.js:261
-2015-05-02T04:20:36.655852+00:00 app[web.1]: npm ERR! You can get their info via:
-2015-05-02T04:20:36.655948+00:00 app[web.1]: npm ERR!     npm owner ls mywebapp
-2015-05-02T04:20:36.654609+00:00 app[web.1]: npm ERR! 
-2015-05-02T04:20:36.656045+00:00 app[web.1]: npm ERR! There is likely additional logging output above.
-2015-05-02T04:20:36.656925+00:00 app[web.1]: npm ERR! npm -v 1.4.28
-2015-05-02T04:20:36.657044+00:00 app[web.1]: npm ERR! code ELIFECYCLE
-2015-05-02T04:20:36.656174+00:00 app[web.1]: npm ERR! System Linux 3.13.0-49-generic
-2015-05-02T04:20:36.656292+00:00 app[web.1]: npm ERR! command "/app/.heroku/node/bin/node" "/app/.heroku/node/bin/npm" "start"
-2015-05-02T04:20:36.656418+00:00 app[web.1]: npm ERR! cwd /app
-2015-05-02T04:20:36.656802+00:00 app[web.1]: npm ERR! node -v v0.10.38
-2015-05-02T04:20:36.658797+00:00 app[web.1]: npm ERR! Additional logging details can be found in:
-2015-05-02T04:20:36.658695+00:00 app[web.1]: npm ERR! 
-2015-05-02T04:20:36.659080+00:00 app[web.1]: npm ERR! not ok code 0
-2015-05-02T04:20:36.658920+00:00 app[web.1]: npm ERR!     /app/npm-debug.log
-2015-05-02T04:20:37.349282+00:00 heroku[web.1]: State changed from starting to crashed
 2015-05-02T04:20:37.338394+00:00 heroku[web.1]: Process exited with status 1
 2015-05-02T04:20:38.240005+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=cogsmediacount.herokuapp.com request_id=680f120b-8e80-499e-a686-e3f57d2ad55f fwd="66.75.37.251" dyno= connect= service= status=503 bytes=
 2015-05-02T04:22:50.329675+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=cogsmediacount.herokuapp.com request_id=a4c0b1be-cb01-484b-ac4a-15e431cd3823 fwd="66.75.37.251" dyno= connect= service= status=503 bytes=
 2015-05-02T04:25:20.637543+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=cogsmediacount.herokuapp.com request_id=1481aeaa-fcd2-43a5-9e2c-1563e0899ceb fwd="66.75.37.251" dyno= connect= service= status=503 bytes=
 2015-05-02T04:26:51.700117+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=cogsmediacount.herokuapp.com request_id=d41ee3de-9954-4b0a-9833-3636f465edb5 fwd="66.75.37.251" dyno= connect= service= status=503 bytes=
 2015-05-02T04:31:00.580835+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=cogsmediacount.herokuapp.com request_id=02dae393-34ed-49c1-9254-6a15124ea5b6 fwd="66.75.37.251" dyno= connect= service= status=503 bytes=
+2015-05-02T04:34:32.868332+00:00 heroku[api]: Deploy 9c242fe by martinnguyen0618@gmail.com
+2015-05-02T04:34:32.868332+00:00 heroku[api]: Release v9 created by martinnguyen0618@gmail.com
+2015-05-02T04:34:33.418908+00:00 heroku[web.1]: State changed from crashed to starting
+2015-05-02T04:34:35.137855+00:00 heroku[web.1]: Starting process with command `npm start`
+2015-05-02T04:34:36.677813+00:00 app[web.1]: Recommending WEB_CONCURRENCY=1
+2015-05-02T04:34:36.677788+00:00 app[web.1]: Detected 512 MB available memory, 512 MB limit per process (WEB_MEMORY)
+2015-05-02T04:34:37.105074+00:00 app[web.1]: 
+2015-05-02T04:34:37.105078+00:00 app[web.1]: > mywebapp@0.0.1 start /app
+2015-05-02T04:34:37.105081+00:00 app[web.1]: 
+2015-05-02T04:34:37.105080+00:00 app[web.1]: > node app.js
+2015-05-02T04:34:37.816431+00:00 app[web.1]: 
+2015-05-02T04:34:37.816551+00:00 app[web.1]: /app/app.js:24
+2015-05-02T04:34:37.816838+00:00 app[web.1]: var INSTAGRAM_CALLBACK_URL = local ? 'http://localhost:3000/auth/instagram/cal
+2015-05-02T04:34:37.816913+00:00 app[web.1]:                              ^
+2015-05-02T04:34:37.818962+00:00 app[web.1]: ReferenceError: local is not defined
+2015-05-02T04:34:37.818964+00:00 app[web.1]:     at Object.<anonymous> (/app/app.js:24:30)
+2015-05-02T04:34:37.818965+00:00 app[web.1]:     at Module._compile (module.js:456:26)
+2015-05-02T04:34:37.818967+00:00 app[web.1]:     at Object.Module._extensions..js (module.js:474:10)
+2015-05-02T04:34:37.818976+00:00 app[web.1]:     at node.js:935:3
+2015-05-02T04:34:37.818970+00:00 app[web.1]:     at Function.Module._load (module.js:312:12)
+2015-05-02T04:34:37.818971+00:00 app[web.1]:     at Function.Module.runMain (module.js:497:10)
+2015-05-02T04:34:37.818974+00:00 app[web.1]:     at startup (node.js:119:16)
+2015-05-02T04:34:37.831265+00:00 app[web.1]: 
+2015-05-02T04:34:37.838760+00:00 app[web.1]: npm ERR! not with npm itself.
+2015-05-02T04:34:37.818968+00:00 app[web.1]:     at Module.load (module.js:356:32)
+2015-05-02T04:34:37.838867+00:00 app[web.1]: npm ERR! Tell the author that this fails on your system:
+2015-05-02T04:34:37.839263+00:00 app[web.1]: npm ERR!     node app.js
+2015-05-02T04:34:37.839624+00:00 app[web.1]: npm ERR!     npm owner ls mywebapp
+2015-05-02T04:34:37.838622+00:00 app[web.1]: npm ERR! This is most likely a problem with the mywebapp package,
+2015-05-02T04:34:37.839445+00:00 app[web.1]: npm ERR! You can get their info via:
+2015-05-02T04:34:37.839805+00:00 app[web.1]: npm ERR! There is likely additional logging output above.
+2015-05-02T04:34:37.840576+00:00 app[web.1]: npm ERR! command "/app/.heroku/node/bin/node" "/app/.heroku/node/bin/npm" "start"
+2015-05-02T04:34:37.840795+00:00 app[web.1]: npm ERR! cwd /app
+2015-05-02T04:34:37.840310+00:00 app[web.1]: npm ERR! System Linux 3.13.0-49-generic
+2015-05-02T04:34:37.841393+00:00 app[web.1]: npm ERR! node -v v0.10.38
+2015-05-02T04:34:37.844047+00:00 app[web.1]: npm ERR! Additional logging details can be found in:
+2015-05-02T04:34:37.843925+00:00 app[web.1]: npm ERR! 
+2015-05-02T04:34:37.841553+00:00 app[web.1]: npm ERR! npm -v 1.4.28
+2015-05-02T04:34:37.841770+00:00 app[web.1]: npm ERR! code ELIFECYCLE
+2015-05-02T04:34:37.844160+00:00 app[web.1]: npm ERR!     /app/npm-debug.log
+2015-05-02T04:34:37.844372+00:00 app[web.1]: npm ERR! not ok code 0
+2015-05-02T04:34:37.837469+00:00 app[web.1]: npm ERR! mywebapp@0.0.1 start: `node app.js`
+2015-05-02T04:34:37.815882+00:00 app[web.1]: { [Error: ENOENT, no such file or directory '.env'] errno: 34, code: 'ENOENT', path: '.env', syscall: 'open' }
+2015-05-02T04:34:37.838228+00:00 app[web.1]: npm ERR! Failed at the mywebapp@0.0.1 start script.
+2015-05-02T04:34:37.837822+00:00 app[web.1]: npm ERR! 
+2015-05-02T04:34:37.837667+00:00 app[web.1]: npm ERR! Exit status 8
+2015-05-02T04:34:38.581940+00:00 heroku[web.1]: Process exited with status 1
+2015-05-02T04:34:38.596750+00:00 heroku[web.1]: State changed from starting to crashed
+2015-05-02T04:34:38.597943+00:00 heroku[web.1]: State changed from crashed to starting
+2015-05-02T04:34:40.254022+00:00 heroku[web.1]: Starting process with command `npm start`
+2015-05-02T04:34:42.023780+00:00 app[web.1]: Detected 512 MB available memory, 512 MB limit per process (WEB_MEMORY)
+2015-05-02T04:34:42.023841+00:00 app[web.1]: Recommending WEB_CONCURRENCY=1
+2015-05-02T04:34:42.468355+00:00 app[web.1]: 
+2015-05-02T04:34:42.468363+00:00 app[web.1]: > node app.js
+2015-05-02T04:34:42.468365+00:00 app[web.1]: 
+2015-05-02T04:34:42.468362+00:00 app[web.1]: > mywebapp@0.0.1 start /app
+2015-05-02T04:34:43.484675+00:00 app[web.1]: { [Error: ENOENT, no such file or directory '.env'] errno: 34, code: 'ENOENT', path: '.env', syscall: 'open' }
+2015-05-02T04:34:43.508589+00:00 app[web.1]: npm ERR! mywebapp@0.0.1 start: `node app.js`
+2015-05-02T04:34:43.508845+00:00 app[web.1]: npm ERR! Exit status 8
+2015-05-02T04:34:43.509019+00:00 app[web.1]: npm ERR! 
+2015-05-02T04:34:43.509559+00:00 app[web.1]: npm ERR! Failed at the mywebapp@0.0.1 start script.
+2015-05-02T04:34:43.485359+00:00 app[web.1]: /app/app.js:24
+2015-05-02T04:34:43.485651+00:00 app[web.1]: var INSTAGRAM_CALLBACK_URL = local ? 'http://localhost:3000/auth/instagram/cal
+2015-05-02T04:34:43.488254+00:00 app[web.1]: ReferenceError: local is not defined
+2015-05-02T04:34:43.485725+00:00 app[web.1]:                              ^
+2015-05-02T04:34:43.485263+00:00 app[web.1]: 
+2015-05-02T04:34:43.488259+00:00 app[web.1]:     at Object.<anonymous> (/app/app.js:24:30)
+2015-05-02T04:34:43.488260+00:00 app[web.1]:     at Module._compile (module.js:456:26)
+2015-05-02T04:34:43.488262+00:00 app[web.1]:     at Object.Module._extensions..js (module.js:474:10)
+2015-05-02T04:34:43.488263+00:00 app[web.1]:     at Module.load (module.js:356:32)
+2015-05-02T04:34:43.488264+00:00 app[web.1]:     at Function.Module._load (module.js:312:12)
+2015-05-02T04:34:43.488266+00:00 app[web.1]:     at Function.Module.runMain (module.js:497:10)
+2015-05-02T04:34:43.488267+00:00 app[web.1]:     at startup (node.js:119:16)
+2015-05-02T04:34:43.501965+00:00 app[web.1]: 
+2015-05-02T04:34:43.488269+00:00 app[web.1]:     at node.js:935:3
+2015-05-02T04:34:43.510021+00:00 app[web.1]: npm ERR! This is most likely a problem with the mywebapp package,
+2015-05-02T04:34:43.510109+00:00 app[web.1]: npm ERR! not with npm itself.
+2015-05-02T04:34:43.510558+00:00 app[web.1]: npm ERR!     node app.js
+2015-05-02T04:34:43.510218+00:00 app[web.1]: npm ERR! Tell the author that this fails on your system:
+2015-05-02T04:34:43.510675+00:00 app[web.1]: npm ERR! You can get their info via:
+2015-05-02T04:34:43.510788+00:00 app[web.1]: npm ERR!     npm owner ls mywebapp
+2015-05-02T04:34:43.510929+00:00 app[web.1]: npm ERR! There is likely additional logging output above.
+2015-05-02T04:34:43.511082+00:00 app[web.1]: npm ERR! System Linux 3.13.0-49-generic
+2015-05-02T04:34:43.511385+00:00 app[web.1]: npm ERR! command "/app/.heroku/node/bin/node" "/app/.heroku/node/bin/npm" "start"
+2015-05-02T04:34:43.511388+00:00 app[web.1]: npm ERR! cwd /app
+2015-05-02T04:34:43.512187+00:00 app[web.1]: npm ERR! node -v v0.10.38
+2015-05-02T04:34:43.512373+00:00 app[web.1]: npm ERR! npm -v 1.4.28
+2015-05-02T04:34:43.512509+00:00 app[web.1]: npm ERR! code ELIFECYCLE
+2015-05-02T04:34:43.514868+00:00 app[web.1]: npm ERR! Additional logging details can be found in:
+2015-05-02T04:34:43.515223+00:00 app[web.1]: npm ERR! not ok code 0
+2015-05-02T04:34:43.514733+00:00 app[web.1]: npm ERR! 
+2015-05-02T04:34:43.515016+00:00 app[web.1]: npm ERR!     /app/npm-debug.log
+2015-05-02T04:34:44.543266+00:00 heroku[web.1]: State changed from starting to crashed
+2015-05-02T04:34:44.527019+00:00 heroku[web.1]: Process exited with status 1
+2015-05-02T04:34:45.951219+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=cogsmediacount.herokuapp.com request_id=4f928ba3-327c-4cbb-a07b-379cfc70da56 fwd="66.75.37.251" dyno= connect= service= status=503 bytes=
