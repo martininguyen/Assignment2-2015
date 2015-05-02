@@ -1,7 +1,3 @@
-2015-05-02T04:18:51.205285+00:00 app[web.1]: npm ERR! node -v v0.10.38
-2015-05-02T04:18:51.205420+00:00 app[web.1]: npm ERR! npm -v 1.4.28
-2015-05-02T04:18:51.207561+00:00 app[web.1]: npm ERR! Additional logging details can be found in:
-2015-05-02T04:18:51.205529+00:00 app[web.1]: npm ERR! code ELIFECYCLE
 2015-05-02T04:18:51.207480+00:00 app[web.1]: npm ERR! 
 2015-05-02T04:18:51.612799+00:00 heroku[web.1]: Process exited with status 143
 2015-05-02T04:18:52.151309+00:00 heroku[web.1]: Process exited with status 1
@@ -99,3 +95,7 @@
 2015-05-02T04:20:37.349282+00:00 heroku[web.1]: State changed from starting to crashed
 2015-05-02T04:20:37.338394+00:00 heroku[web.1]: Process exited with status 1
 2015-05-02T04:20:38.240005+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=cogsmediacount.herokuapp.com request_id=680f120b-8e80-499e-a686-e3f57d2ad55f fwd="66.75.37.251" dyno= connect= service= status=503 bytes=
+2015-05-02T04:22:50.329675+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=cogsmediacount.herokuapp.com request_id=a4c0b1be-cb01-484b-ac4a-15e431cd3823 fwd="66.75.37.251" dyno= connect= service= status=503 bytes=
+2015-05-02T04:25:20.637543+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=cogsmediacount.herokuapp.com request_id=1481aeaa-fcd2-43a5-9e2c-1563e0899ceb fwd="66.75.37.251" dyno= connect= service= status=503 bytes=
+2015-05-02T04:26:51.700117+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=cogsmediacount.herokuapp.com request_id=d41ee3de-9954-4b0a-9833-3636f465edb5 fwd="66.75.37.251" dyno= connect= service= status=503 bytes=
+2015-05-02T04:31:00.580835+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=cogsmediacount.herokuapp.com request_id=02dae393-34ed-49c1-9254-6a15124ea5b6 fwd="66.75.37.251" dyno= connect= service= status=503 bytes=

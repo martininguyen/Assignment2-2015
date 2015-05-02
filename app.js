@@ -216,10 +216,10 @@ app.get('/igMediaCounts', ensureAuthenticatedInstagram, function(req, res){
   });
 });
 
-app.get('/igFollowers', ensureAuthenticatedInstagram, function(req, res){
+app.get('/igFollowers', ensureAuthenticatedInstagram, function(req, res) {
   var query = models.User.where({ig_id : req.user.ig_id});
-  query.findOne(function(err, user){
-	   {
+
+  query.findOne(function(err, user) {
     if(err) return err;
     if(user) {
       Instagram.users.followed_by({
@@ -271,7 +271,7 @@ app.get('/c3visualization', ensureAuthenticatedInstagram, function (req, res){
 }); 
 
 app.get('/barvisualization', ensureAuthenticated, function(req, res){
-	res.render('myvisualization', { user : req.user });
+	res.render('barvisualization', { user : req.user });
 });
 
 app.get('/auth/instagram',
