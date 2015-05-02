@@ -1,83 +1,3 @@
-2015-05-02T04:34:37.839263+00:00 app[web.1]: npm ERR!     node app.js
-2015-05-02T04:34:37.839624+00:00 app[web.1]: npm ERR!     npm owner ls mywebapp
-2015-05-02T04:34:37.838622+00:00 app[web.1]: npm ERR! This is most likely a problem with the mywebapp package,
-2015-05-02T04:34:37.839445+00:00 app[web.1]: npm ERR! You can get their info via:
-2015-05-02T04:34:37.839805+00:00 app[web.1]: npm ERR! There is likely additional logging output above.
-2015-05-02T04:34:37.840576+00:00 app[web.1]: npm ERR! command "/app/.heroku/node/bin/node" "/app/.heroku/node/bin/npm" "start"
-2015-05-02T04:34:37.840795+00:00 app[web.1]: npm ERR! cwd /app
-2015-05-02T04:34:37.840310+00:00 app[web.1]: npm ERR! System Linux 3.13.0-49-generic
-2015-05-02T04:34:37.841393+00:00 app[web.1]: npm ERR! node -v v0.10.38
-2015-05-02T04:34:37.844047+00:00 app[web.1]: npm ERR! Additional logging details can be found in:
-2015-05-02T04:34:37.843925+00:00 app[web.1]: npm ERR! 
-2015-05-02T04:34:37.841553+00:00 app[web.1]: npm ERR! npm -v 1.4.28
-2015-05-02T04:34:37.841770+00:00 app[web.1]: npm ERR! code ELIFECYCLE
-2015-05-02T04:34:37.844160+00:00 app[web.1]: npm ERR!     /app/npm-debug.log
-2015-05-02T04:34:37.844372+00:00 app[web.1]: npm ERR! not ok code 0
-2015-05-02T04:34:37.837469+00:00 app[web.1]: npm ERR! mywebapp@0.0.1 start: `node app.js`
-2015-05-02T04:34:37.815882+00:00 app[web.1]: { [Error: ENOENT, no such file or directory '.env'] errno: 34, code: 'ENOENT', path: '.env', syscall: 'open' }
-2015-05-02T04:34:37.838228+00:00 app[web.1]: npm ERR! Failed at the mywebapp@0.0.1 start script.
-2015-05-02T04:34:37.837822+00:00 app[web.1]: npm ERR! 
-2015-05-02T04:34:37.837667+00:00 app[web.1]: npm ERR! Exit status 8
-2015-05-02T04:34:38.581940+00:00 heroku[web.1]: Process exited with status 1
-2015-05-02T04:34:38.596750+00:00 heroku[web.1]: State changed from starting to crashed
-2015-05-02T04:34:38.597943+00:00 heroku[web.1]: State changed from crashed to starting
-2015-05-02T04:34:40.254022+00:00 heroku[web.1]: Starting process with command `npm start`
-2015-05-02T04:34:42.023780+00:00 app[web.1]: Detected 512 MB available memory, 512 MB limit per process (WEB_MEMORY)
-2015-05-02T04:34:42.023841+00:00 app[web.1]: Recommending WEB_CONCURRENCY=1
-2015-05-02T04:34:42.468355+00:00 app[web.1]: 
-2015-05-02T04:34:42.468363+00:00 app[web.1]: > node app.js
-2015-05-02T04:34:42.468365+00:00 app[web.1]: 
-2015-05-02T04:34:42.468362+00:00 app[web.1]: > mywebapp@0.0.1 start /app
-2015-05-02T04:34:43.484675+00:00 app[web.1]: { [Error: ENOENT, no such file or directory '.env'] errno: 34, code: 'ENOENT', path: '.env', syscall: 'open' }
-2015-05-02T04:34:43.508589+00:00 app[web.1]: npm ERR! mywebapp@0.0.1 start: `node app.js`
-2015-05-02T04:34:43.508845+00:00 app[web.1]: npm ERR! Exit status 8
-2015-05-02T04:34:43.509019+00:00 app[web.1]: npm ERR! 
-2015-05-02T04:34:43.509559+00:00 app[web.1]: npm ERR! Failed at the mywebapp@0.0.1 start script.
-2015-05-02T04:34:43.485359+00:00 app[web.1]: /app/app.js:24
-2015-05-02T04:34:43.485651+00:00 app[web.1]: var INSTAGRAM_CALLBACK_URL = local ? 'http://localhost:3000/auth/instagram/cal
-2015-05-02T04:34:43.488254+00:00 app[web.1]: ReferenceError: local is not defined
-2015-05-02T04:34:43.485725+00:00 app[web.1]:                              ^
-2015-05-02T04:34:43.485263+00:00 app[web.1]: 
-2015-05-02T04:34:43.488259+00:00 app[web.1]:     at Object.<anonymous> (/app/app.js:24:30)
-2015-05-02T04:34:43.488260+00:00 app[web.1]:     at Module._compile (module.js:456:26)
-2015-05-02T04:34:43.488262+00:00 app[web.1]:     at Object.Module._extensions..js (module.js:474:10)
-2015-05-02T04:34:43.488263+00:00 app[web.1]:     at Module.load (module.js:356:32)
-2015-05-02T04:34:43.488264+00:00 app[web.1]:     at Function.Module._load (module.js:312:12)
-2015-05-02T04:34:43.488266+00:00 app[web.1]:     at Function.Module.runMain (module.js:497:10)
-2015-05-02T04:34:43.488267+00:00 app[web.1]:     at startup (node.js:119:16)
-2015-05-02T04:34:43.501965+00:00 app[web.1]: 
-2015-05-02T04:34:43.488269+00:00 app[web.1]:     at node.js:935:3
-2015-05-02T04:34:43.510021+00:00 app[web.1]: npm ERR! This is most likely a problem with the mywebapp package,
-2015-05-02T04:34:43.510109+00:00 app[web.1]: npm ERR! not with npm itself.
-2015-05-02T04:34:43.510558+00:00 app[web.1]: npm ERR!     node app.js
-2015-05-02T04:34:43.510218+00:00 app[web.1]: npm ERR! Tell the author that this fails on your system:
-2015-05-02T04:34:43.510675+00:00 app[web.1]: npm ERR! You can get their info via:
-2015-05-02T04:34:43.510788+00:00 app[web.1]: npm ERR!     npm owner ls mywebapp
-2015-05-02T04:34:43.510929+00:00 app[web.1]: npm ERR! There is likely additional logging output above.
-2015-05-02T04:34:43.511082+00:00 app[web.1]: npm ERR! System Linux 3.13.0-49-generic
-2015-05-02T04:34:43.511385+00:00 app[web.1]: npm ERR! command "/app/.heroku/node/bin/node" "/app/.heroku/node/bin/npm" "start"
-2015-05-02T04:34:43.511388+00:00 app[web.1]: npm ERR! cwd /app
-2015-05-02T04:34:43.512187+00:00 app[web.1]: npm ERR! node -v v0.10.38
-2015-05-02T04:34:43.512373+00:00 app[web.1]: npm ERR! npm -v 1.4.28
-2015-05-02T04:34:43.512509+00:00 app[web.1]: npm ERR! code ELIFECYCLE
-2015-05-02T04:34:43.514868+00:00 app[web.1]: npm ERR! Additional logging details can be found in:
-2015-05-02T04:34:43.515223+00:00 app[web.1]: npm ERR! not ok code 0
-2015-05-02T04:34:43.514733+00:00 app[web.1]: npm ERR! 
-2015-05-02T04:34:43.515016+00:00 app[web.1]: npm ERR!     /app/npm-debug.log
-2015-05-02T04:34:44.543266+00:00 heroku[web.1]: State changed from starting to crashed
-2015-05-02T04:34:44.527019+00:00 heroku[web.1]: Process exited with status 1
-2015-05-02T04:34:45.951219+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=cogsmediacount.herokuapp.com request_id=4f928ba3-327c-4cbb-a07b-379cfc70da56 fwd="66.75.37.251" dyno= connect= service= status=503 bytes=
-2015-05-02T04:36:48.135204+00:00 heroku[api]: Release v10 created by martinnguyen0618@gmail.com
-2015-05-02T04:36:48.135204+00:00 heroku[api]: Deploy 38e8c4a by martinnguyen0618@gmail.com
-2015-05-02T04:36:48.932489+00:00 heroku[web.1]: State changed from crashed to starting
-2015-05-02T04:36:50.451889+00:00 heroku[web.1]: Starting process with command `npm start`
-2015-05-02T04:36:51.597107+00:00 app[web.1]: Detected 512 MB available memory, 512 MB limit per process (WEB_MEMORY)
-2015-05-02T04:36:51.597133+00:00 app[web.1]: Recommending WEB_CONCURRENCY=1
-2015-05-02T04:36:52.006062+00:00 app[web.1]: 
-2015-05-02T04:36:52.006068+00:00 app[web.1]: > mywebapp@0.0.1 start /app
-2015-05-02T04:36:52.006069+00:00 app[web.1]: > node app.js
-2015-05-02T04:36:52.006071+00:00 app[web.1]: 
-2015-05-02T04:36:52.656867+00:00 app[web.1]: { [Error: ENOENT, no such file or directory '.env'] errno: 34, code: 'ENOENT', path: '.env', syscall: 'open' }
 2015-05-02T04:36:52.784598+00:00 app[web.1]: connection error: { [MongoError: getaddrinfo ENOTFOUND] name: 'MongoError', message: 'getaddrinfo ENOTFOUND' }
 2015-05-02T04:36:52.711661+00:00 app[web.1]: Express server listening on port 31633
 2015-05-02T04:36:53.167231+00:00 heroku[web.1]: State changed from starting to up
@@ -88,16 +8,95 @@
 2015-05-02T04:37:05.138386+00:00 heroku[router]: at=info method=GET path="/css/bootstrap-theme.css" host=cogsmediacount.herokuapp.com request_id=7c42b699-0917-4d0a-bc56-35697581b2ff fwd="66.75.37.251" dyno=web.1 connect=2ms service=5ms status=200 bytes=15225
 2015-05-02T04:37:05.148376+00:00 heroku[router]: at=info method=GET path="/css/c3.min.css" host=cogsmediacount.herokuapp.com request_id=6983fc5d-ae89-4a0a-baa6-776215f09a49 fwd="66.75.37.251" dyno=web.1 connect=1ms service=12ms status=200 bytes=2260
 2015-05-02T04:37:05.254340+00:00 heroku[router]: at=info method=GET path="/js/c3.min.js" host=cogsmediacount.herokuapp.com request_id=810c7c75-874a-4370-b611-8be0120ceca9 fwd="66.75.37.251" dyno=web.1 connect=2ms service=12ms status=200 bytes=137566
-2015-05-02T04:37:05.157877+00:00 heroku[router]: at=info method=GET path="/css/visualization.css" host=cogsmediacou
-nt.herokuapp.com request_id=b85caf25-b895-4304-9340-dcf6003b830e fwd="66.75.37.251" dyno=web.1 connect=2ms service=8ms status=200 bytes=505
+2015-05-02T04:37:05.157877+00:00 heroku[router]: at=info method=GET path="/css/visualization.css" host=cogsmediacount.herokuapp.com request_id=b85caf25-b895-4304-9340-dcf6003b830e fwd="66.75.37.251" dyno=web.1 connect=2ms service=8ms status=200 bytes=505
 2015-05-02T04:37:08.636778+00:00 heroku[router]: at=info method=GET path="/auth/instagram" host=cogsmediacount.herokuapp.com request_id=fd8dbb53-d2b6-4fd9-a4d8-96a2a16046dd fwd="66.75.37.251" dyno=web.1 connect=4ms service=7ms status=302 bytes=333
 2015-05-02T04:37:11.189337+00:00 heroku[router]: at=info method=GET path="/auth/instagram" host=cogsmediacount.herokuapp.com request_id=4f47c542-414d-4325-b146-8a6219583404 fwd="66.75.37.251" dyno=web.1 connect=1ms service=4ms status=302 bytes=333
 2015-05-02T04:37:39.475267+00:00 heroku[router]: at=error code=H12 desc="Request timeout" method=GET path="/auth/instagram/callback?code=30a3624f05c74173931cecfc8e76ad26" host=cogsmediacount.herokuapp.com request_id=68400c17-b01a-4120-9ce3-15625afbfa1f fwd="66.75.37.251" dyno=web.1 connect=2ms service=30000ms status=503 bytes=0
 2015-05-02T04:37:47.200820+00:00 heroku[router]: at=info method=GET path="/css/bootstrap-theme.css" host=cogsmediacount.herokuapp.com request_id=7a180164-059c-473f-87c1-a6e9c4ea2b21 fwd="66.75.37.251" dyno=web.1 connect=1ms service=2ms status=304 bytes=237
-2015-05-02T04:37:47.235439+00:00 heroku[router]: at=info method=GET path="/css/visualization.css" host=cogsmediacount.herokuapp.com request_id=e8a46850-5f4f-4a08-b08a-0702e2dcfcbf fwd="66.75.37
-.251" dyno=web.1 connect=2ms service=3ms status=304 bytes=235
+2015-05-02T04:37:47.235439+00:00 heroku[router]: at=info method=GET path="/css/visualization.css" host=cogsmediacount.herokuapp.com request_id=e8a46850-5f4f-4a08-b08a-0702e2dcfcbf fwd="66.75.37.251" dyno=web.1 connect=2ms service=3ms status=304 bytes=235
 2015-05-02T04:37:47.222168+00:00 heroku[router]: at=info method=GET path="/css/c3.min.css" host=cogsmediacount.herokuapp.com request_id=94275258-4f1e-4bbe-a1a1-db5bd37d12b3 fwd="66.75.37.251" dyno=web.1 connect=1ms service=2ms status=304 bytes=236
 2015-05-02T04:37:47.193730+00:00 heroku[router]: at=info method=GET path="/css/bootstrap.css" host=cogsmediacount.herokuapp.com request_id=5cd3fada-6dfa-4202-96e3-a2a0abfaafbb fwd="66.75.37.251" dyno=web.1 connect=1ms service=4ms status=304 bytes=238
 2015-05-02T04:37:47.373558+00:00 heroku[router]: at=info method=GET path="/css/bootstrap.css.map" host=cogsmediacount.herokuapp.com request_id=36bc85e0-45f8-428a-87e5-15c0a740c509 fwd="66.75.37.251" dyno=web.1 connect=1ms service=22ms status=200 bytes=246244
 2015-05-02T04:37:47.376366+00:00 heroku[router]: at=info method=GET path="/css/bootstrap-theme.css.map" host=cogsmediacount.herokuapp.com request_id=29231445-3273-47f8-b5d9-eb44d3c93609 fwd="66.75.37.251" dyno=web.1 connect=1ms service=4ms status=200 bytes=38670
 2015-05-02T04:38:21.806723+00:00 heroku[router]: at=error code=H12 desc="Request timeout" method=GET path="/auth/instagram/callback?code=54b93eedc6e04cc78578c1305e298305" host=cogsmediacount.herokuapp.com request_id=5276570e-81a2-4ab8-bcde-b08806e0da4d fwd="66.75.37.251" dyno=web.1 connect=1ms service=30002ms status=503 bytes=0
+2015-05-02T04:41:10.594538+00:00 heroku[router]: at=info method=GET path="/auth/instagram/callback?code=54b93eedc6e04cc78578c1305e298305" host=cogsmediacount.herokuapp.com request_id=b4f0f9bb-39ce-4fbe-892c-278cb357446e fwd="66.75.37.251" dyno=web.1 connect=1ms service=60ms status=500 bytes=1126
+2015-05-02T04:41:10.591503+00:00 app[web.1]:     at _stream_readable.js:944:16
+2015-05-02T04:41:10.591504+00:00 app[web.1]:     at process._tickCallback (node.js:448:13)
+2015-05-02T04:41:10.591501+00:00 app[web.1]:     at IncomingMessage.emit (events.js:117:20)
+2015-05-02T04:41:10.591485+00:00 app[web.1]: failed to obtain access token (status: 400 data: {"code": 400, "error_type": "OAuthException", "error_message": "No matching code found."})
+2015-05-02T04:41:10.591493+00:00 app[web.1]:     at /app/node_modules/passport-instagram/node_modules/passport-oauth/lib/passport-oauth/strategies/oauth2.js:125:38
+2015-05-02T04:41:10.591496+00:00 app[web.1]:     at /app/node_modules/passport-instagram/node_modules/passport-oauth/node_modules/oauth/lib/oauth2.js:177:18
+2015-05-02T04:41:10.591497+00:00 app[web.1]:     at passBackControl (/app/node_modules/passport-instagram/node_modules/passport-oauth/node_modules/oauth/lib/oauth2.js:124:9)
+2015-05-02T04:41:10.591499+00:00 app[web.1]:     at IncomingMessage.<anonymous> (/app/node_modules/passport-instagram/node_modules/passport-oauth/node_modules/oauth/lib/oauth2.js:143:7)
+2015-05-02T04:43:50.586301+00:00 heroku[router]: at=info method=GET path="/css/bootstrap.css.map" host=cogsmediacount.herokuapp.com request_id=7e29bf7f-e966-4992-9521-2859d74b56e9 fwd="66.75.37.251" dyno=web.1 connect=2ms service=3ms status=304 bytes=238
+2015-05-02T04:43:50.599222+00:00 heroku[router]: at=info method=GET path="/css/bootstrap-theme.css.map" host=cogsmediacount.herokuapp.com request_id=f0076207-0267-4c9a-9da8-26ba6b32f3d3 fwd="66.75.37.251" dyno=web.1 connect=2ms service=2ms status=304 bytes=237
+2015-05-02T04:44:21.761539+00:00 heroku[router]: at=info method=GET path="/auth/instagram" host=cogsmediacount.herokuapp.com request_id=ec01b218-2add-4561-863f-649a82ed2ba4 fwd="66.75.37.251" dyno=web.1 connect=9ms service=10ms status=302 bytes=333
+2015-05-02T04:44:23.683835+00:00 heroku[api]: Deploy b63661a by martinnguyen0618@gmail.com
+2015-05-02T04:44:23.683835+00:00 heroku[api]: Release v11 created by martinnguyen0618@gmail.com
+2015-05-02T04:44:25.435374+00:00 heroku[web.1]: State changed from up to starting
+2015-05-02T04:44:27.360716+00:00 heroku[web.1]: Stopping all processes with SIGTERM
+2015-05-02T04:44:27.509371+00:00 heroku[web.1]: Starting process with command `npm start`
+2015-05-02T04:44:27.861744+00:00 app[web.1]: Error waiting for process to terminate: No child processes
+2015-05-02T04:44:27.948809+00:00 heroku[router]: at=error code=H13 desc="Connection closed without response" method=GET path="/auth/instagram/callback?code=4a5c4b0ebbc44165aa640133a9752072" host=cogsmediacount.herokuapp.com request_id=ef765fd8-176e-4f65-b494-e21bf8f3e11a fwd="66.75.37.251" dyno=web.1 connect=2ms service=5355ms status=503 bytes=0
+2015-05-02T04:44:28.594534+00:00 heroku[web.1]: Process exited with status 22
+2015-05-02T04:44:28.968517+00:00 app[web.1]: Detected 512 MB available memory, 512 MB limit per process (WEB_MEMORY)
+2015-05-02T04:44:28.968543+00:00 app[web.1]: Recommending WEB_CONCURRENCY=1
+2015-05-02T04:44:29.422862+00:00 app[web.1]: 
+2015-05-02T04:44:29.422869+00:00 app[web.1]: > mywebapp@0.0.1 start /app
+2015-05-02T04:44:29.422870+00:00 app[web.1]: > node app.js
+2015-05-02T04:44:29.422872+00:00 app[web.1]: 
+2015-05-02T04:44:30.159760+00:00 app[web.1]: { [Error: ENOENT, no such file or directory '.env'] errno: 34, code: 'ENOENT', path: '.env', syscall: 'open' }
+2015-05-02T04:44:30.286019+00:00 app[web.1]: connection error: { [MongoError: getaddrinfo ENOTFOUND] name: 'MongoError', message: 'getaddrinfo ENOTFOUND' }
+2015-05-02T04:44:30.217487+00:00 app[web.1]: Express server listening on port 52932
+2015-05-02T04:44:30.507361+00:00 heroku[web.1]: State changed from starting to up
+2015-05-02T04:44:59.732520+00:00 heroku[router]: at=info method=GET path="/" host=cogsmediacount.herokuapp.com request_id=41486222-ea0f-4f74-a63b-09ac9df7a88c fwd="66.75.37.251" dyno=web.1 connect=0ms service=40ms status=200 bytes=1691
+2015-05-02T04:44:59.960696+00:00 heroku[router]: at=info method=GET path="/css/bootstrap.css" host=cogsmediacount.herokuapp.com request_id=d93da58c-b3d3-47f5-a483-9707eb6cf944 fwd="66.75.37.251" dyno=web.1 connect=1ms service=11ms status=200 bytes=121511
+2015-05-02T04:44:59.972889+00:00 heroku[router]: at=info method=GET path="/css/bootstrap-theme.css" host=cogsmediacount.herokuapp.com request_id=7efe8838-ec5e-43e4-be56-b31b62df15b0 fwd="66.75.37.251" dyno=web.1 connect=0ms service=9ms status=200 bytes=15225
+2015-05-02T04:44:59.964561+00:00 heroku[router]: at=info method=GET path="/css/visualization.css" host=cogsmediacount.herokuapp.com request_id=0078304f-e0a0-4300-9698-3bf4edb0ec48 fwd="66.75.37.251" dyno=web.1 connect=1ms service=9ms status=200 bytes=505
+2015-05-02T04:45:00.085840+00:00 heroku[router]: at=info method=GET path="/js/d3.min.js" host=cogsmediacount.herokuapp.com request_id=4e25b12f-638a-422b-9629-61887f92ce0c fwd="66.75.37.251" dyno=web.1 connect=0ms service=10ms status=200 bytes=151416
+2015-05-02T04:45:00.073196+00:00 heroku[router]: at=info method=GET path="/js/bootstrap.js" host=cogsmediacount.herokuapp.com request_id=6d6177fb-c6dc-4577-9987-3788fcaff8a0 fwd="66.75.37.251" dyno=web.1 connect=0ms service=4ms status=200 bytes=55546
+2015-05-02T04:44:59.964104+00:00 heroku[router]: at=info method=GET path="/css/c3.min.css" host=cogsmediacount.herokuapp.com request_id=b3fba5cb-00f5-4abc-9804-6ed42359f066 fwd="66.75.37.251" dyno=web.1 connect=0ms service=9ms status=200 bytes=2260
+2015-05-02T04:45:00.080303+00:00 heroku[router]: at=info method=GET path="/js/c3.min.js" host=cogsmediacount.herokuapp.com request_id=d4860c47-2225-42cd-8006-e72d24245988 fwd="66.75.37.251" dyno=web.1 connect=4ms service=10ms status=200 bytes=137566
+2015-05-02T04:45:00.109348+00:00 heroku[router]: at=info method=GET path="/css/login.css" host=cogsmediacount.herokuapp.com request_id=cd651b16-cfc8-4201-8794-5ab1eb9750cb fwd="66.75.37.251" dyno=web.1 connect=0ms service=5ms status=200 bytes=313
+2015-05-02T04:45:01.808268+00:00 heroku[router]: at=info method=GET path="/auth/instagram" host=cogsmediacount.herokuapp.com request_id=2b977787-0289-4e21-8456-848dcb7a7dde fwd="66.75.37.251" dyno=web.1 connect=1ms service=19ms status=302 bytes=333
+2015-05-02T04:45:32.204440+00:00 heroku[router]: at=error code=H12 desc="Request timeout" method=GET path="/auth/instagram/callback?code=4ed64a0d91b64721a2edc7995ca6cbac" host=cogsmediacount.herokuapp.com request_id=339f778e-c6bd-4b0a-beb9-28670b6f6b41 fwd="66.75.37.251" dyno=web.1 connect=2ms service=30001ms status=503 bytes=0
+2015-05-02T04:46:46.639465+00:00 heroku[router]: at=info method=GET path="/" host=cogsmediacount.herokuapp.com request_id=f976e220-1667-4d42-a958-c577252b66fc fwd="75.80.48.60" dyno=web.1 connect=1ms service=39ms status=200 bytes=1695
+2015-05-02T04:46:46.764079+00:00 heroku[router]: at=info method=GET path="/css/bootstrap.css" host=cogsmediacount.herokuapp.com request_id=c810aedd-fd32-42cf-ac27-ea198b5a4436 fwd="75.80.48.60" dyno=web.1 connect=0ms service=5ms status=200 bytes=121511
+2015-05-02T04:46:46.881191+00:00 heroku[router]: at=info method=GET path="/css/login.css" host=cogsmediacount.herokuapp.com request_id=a81b2d67-c410-4a0a-a136-7618f3ee17cc fwd="75.80.48.60" dyno=web.1 connect=7ms service=7ms status=200 bytes=313
+2015-05-02T04:46:46.860727+00:00 heroku[router]: at=info method=GET path="/css/c3.min.css" host=cogsmediacount.herokuapp.com request_id=6e796e24-5488-4c6b-bd6d-3812c458faaf fwd="75.80.48.60" dyno=web.1 connect=0ms service=6ms status=200 bytes=2260
+2015-05-02T04:46:46.966988+00:00 heroku[router]: at=info method=GET path="/js/d3.min.js" host=cogsmediacount.herokuapp.com request_id=af109bd5-6540-4941-9589-50375226c446 fwd="75.80.48.60" dyno=web.1 connect=0ms service=17ms status=200 bytes=151416
+2015-05-02T04:46:46.866797+00:00 heroku[router]: at=info method=GET path="/css/bootstrap-theme.css" host=cogsmediacount.herokuapp.com request_id=0f56d620-af06-4391-ad27-bf73f3c81192 fwd="75.80.48.60" dyno=web.1 connect=0ms service=14ms status=200 bytes=15225
+2015-05-02T04:46:46.882368+00:00 heroku[router]: at=info method=GET path="/css/visualization.css" host=cogsmediacount.herokuapp.com request_id=79eb9725-1373-408b-9228-6cd4c980613a fwd="75.80.48.60" dyno=web.1 connect=1ms service=20ms status=200 bytes=505
+2015-05-02T04:46:46.916022+00:00 heroku[router]: at=info method=GET path="/js/bootstrap.js" host=cogsmediacount.herokuapp.com request_id=ebd3232b-2fc8-47c3-8ff5-c3c50a761610 fwd="75.80.48.60" dyno=web.1 connect=9ms service=11ms status=200 bytes=55546
+2015-05-02T04:46:47.016194+00:00 heroku[router]: at=info method=GET path="/js/c3.min.js" host=cogsmediacount.herokuapp.com request_id=3280eb25-62de-4cee-90cb-f32dd73bcf37 fwd="75.80.48.60" dyno=web.1 connect=3ms service=40ms status=200 bytes=137566
+2015-05-02T04:46:47.625843+00:00 heroku[router]: at=info method=GET path="/favicon.ico" host=cogsmediacount.herokuapp.com request_id=43dc0f33-9823-4608-83e9-dfd7460e0bb3 fwd="75.80.48.60" dyno=web.1 connect=8ms service=19ms status=404 bytes=222
+2015-05-02T04:46:50.817222+00:00 heroku[router]: at=info method=GET path="/auth/instagram" host=cogsmediacount.herokuapp.com request_id=46d34c02-9f58-4283-aa01-eeef10ffa704 fwd="75.80.48.60" dyno=web.1 connect=4ms service=8ms status=302 bytes=333
+2015-05-02T04:47:21.487161+00:00 heroku[router]: at=error code=H12 desc="Request timeout" method=GET path="/auth/instagram/callback?code=98e5b560c1314c21b4b0315973b879c6" host=cogsmediacount.herokuapp.com request_id=c2628ecf-28af-4475-8dcb-452adfacc692 fwd="75.80.48.60" dyno=web.1 connect=0ms service=30001ms status=503 bytes=0
+2015-05-02T04:47:57.777248+00:00 heroku[api]: Deploy f9a5890 by martinnguyen0618@gmail.com
+2015-05-02T04:47:57.777248+00:00 heroku[api]: Release v12 created by martinnguyen0618@gmail.com
+2015-05-02T04:47:58.895200+00:00 heroku[web.1]: State changed from up to starting
+2015-05-02T04:48:01.067179+00:00 heroku[web.1]: Starting process with command `npm start`
+2015-05-02T04:48:02.397226+00:00 heroku[web.1]: Stopping all processes with SIGTERM
+2015-05-02T04:48:03.699247+00:00 app[web.1]: Detected 512 MB available memory, 512 MB limit per process (WEB_MEMORY)
+2015-05-02T04:48:03.699277+00:00 app[web.1]: Recommending WEB_CONCURRENCY=1
+2015-05-02T04:48:04.200382+00:00 app[web.1]: 
+2015-05-02T04:48:04.200421+00:00 app[
+web.1]: > mywebapp@0.0.1 start /app
+2015-05-02T04:48:04.200423+00:00 app[web.1]: > node app.js
+2015-05-02T04:48:04.200424+00:00 app[web.1]: 
+2015-05-02T04:48:04.745860+00:00 heroku[web.1]: Process exited with status 143
+2015-05-02T04:48:04.871024+00:00 app[web.1]: { [Error: ENOENT, no such file or directory '.env'] errno: 34, code: 'ENOENT', path: '.env', syscall: 'open' }
+2015-05-02T04:48:04.993218+00:00 app[web.1]: connection error: { [MongoError: getaddrinfo ENOTFOUND] name: 'MongoError', message: 'getaddrinfo ENOTFOUND' }
+2015-05-02T04:48:04.926548+00:00 app[web.1]: Express server listening on port 12722
+2015-05-02T04:48:05.316989+00:00 heroku[web.1]: State changed from starting to up
+2015-05-02T04:53:01.094119+00:00 heroku[router]: at=info method=GET path="/" host=cogsmediacount.herokuapp.com request_id=e0a9d6e9-b244-40d3-a8d6-5a773cc7f1d5 fwd="66.75.37.251" dyno=web.1 connect=0ms service=47ms status=304 bytes=270
+2015-05-02T04:53:01.337383+00:00 heroku[router]: at=info method=GET path="/css/c3.min.css" host=cogsmediacount.herokuapp.com request_id=66a71708-698f-4a3e-baad-8e8f07431ea2 fwd="66.75.37.251" dyno=web.1 connect=1ms service=7ms status=200 bytes=2260
+2015-05-02T04:53:01.338858+00:00 heroku[router]: at=info method=GET path="/css/visualization.css" host=cogsmediacount.herokuapp.com request_id=505d0abb-df7c-4a13-b9ba-9a15879b211d fwd="66.75.37.251" dyno=web.1 connect=1ms service=7ms status=200 bytes=505
+2015-05-02T04:53:01.329252+00:00 heroku[router]: at=info method=GET path="/css/bootstrap.css" host=cogsmediacount.herokuapp.com request_id=9405e7d4-d2ce-48bd-b733-cd9c9cca448f fwd="66.75.37.251" dyno=web.1 connect=1ms service=14ms status=200 bytes=121511
+2015-05-02T04:53:01.354980+00:00 heroku[router]: at=info method=GET path="/css/bootstrap-theme.css" host=cogsmediacount.herokuapp.com request_id=6c69f36c-ce9c-49fe-b0bb-ccbcf642c3fa fwd="66.75.37.251" dyno=web.1 connect=0ms service=22ms status=200 bytes=15225
+2015-05-02T04:53:01.340688+00:00 heroku[router]: at=info method=GET path="/js/bootstrap.js" host=cogsmediacount.herokuapp.com request_id=bda57d67-c77b-439f-9391-9df41a3fda07 fwd="66.75.37.251" dyno=web.1 connect=0ms service=6ms status=200 bytes=55546
+2015-05-02T04:53:01.338498+00:00 heroku[router]: at=info method=GET path="/css/login.css" host=cogsmediacount.herokuapp.com request_id=fb7e5cc6-3e0e-4618-9050-442aa4f43047 fwd="66.75.37.251" dyno=web.1 connect=1ms service=10ms status=200 bytes=312
+2015-05-02T04:53:01.439663+00:00 heroku[router]: at=info method=GET path="/js/d3.min.js" host=cogsmediacount.herokuapp.com request_id=27e38983-ec51-46ee-a7cd-3e437bfa8247 fwd="66.75.37.251" dyno=web.1 connect=0ms service=8ms status=200 bytes=151416
+2015-05-02T04:53:01.464220+00:00 heroku[router]: at=info method=GET path="/js/c3.min.js" host=cogsmediacount.herokuapp.com request_id=2c91d8ad-be99-4fa2-8808-052ab9646170 fwd="66.75.37.251" dyno=web.1 connect=1ms service=9ms status=200 bytes=137566
+2015-05-02T04:53:06.396630+00:00 heroku[router]: at=info method=GET path="/auth/instagram" host=cogsmediacount.herokuapp.com request_id=f7a04d28-e247-413e-827d-0673ea9d752f fwd="66.75.37.251" dyno=web.1 connect=1ms service=7ms status=302 bytes=333
+2015-05-02T04:53:36.895123+00:00 heroku[router]: at=error code=H12 desc="Request timeout" method=GET path="/auth/instagram/callback?code=e2c3f8a5ca7d41a1a0c962f85eaabbe5" host=cogsmediacount.herokuapp.com request_id=b45a7f6c-2f7e-4a92-b58b-d475744bb8f3 fwd="66.75.37.251" dyno=web.1 connect=0ms service=30001ms status=503 bytes=0
