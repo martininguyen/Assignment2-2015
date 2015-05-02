@@ -1,6 +1,6 @@
 (function() {
   var spinnerVisible = false;
-  function show() {
+  function showgi() {
       if (!spinnerVisible) {
           $("div#spinner").fadeIn("fast");
           spinnerVisible = true;

@@ -26,10 +26,9 @@ var svg = d3.select('#chart').append('svg')
 
 var bubble = d3.layout.pack()
     .size([diameter, diameter])
-    .padding(3)
+    .padding(10)
     .value(function(d) { return d.size });
 
-showProgress();
 d3.json('/igFollowers', function(err, data) {
     var nodes = bubble.nodes(processData(data))
     .filter(function(d) { return !d.children; });
@@ -53,10 +52,10 @@ d3.json('/igFollowers', function(err, data) {
     .attr('x', '10')
     .attr('y', '10')
     .attr('width', function(d) {
-        return d.r * 1;
+        return d.r * 2;
     })
     .attr('height', function(d) {
-        return d.r * 1;
+        return d.r * 2;
     });
 
     vis.call(tip);
@@ -75,5 +74,4 @@ d3.json('/igFollowers', function(err, data) {
     .attr('stroke-width', '2')
     .on('mouseover', tip.show)
     .on('mouseout', tip.hide);
-    hideProgress();
 })
