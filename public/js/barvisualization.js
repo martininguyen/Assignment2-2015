@@ -49,8 +49,8 @@ d3.json('/igFollowers', function(err, data) {
     .attr('xlink:href', function(d) {
         return d.img;
     })
-    .attr('x', '10')
-    .attr('y', '10')
+    .attr('x', '1')
+    .attr('y', '1')
     .attr('width', function(d) {
         return d.r * 2;
     })
