@@ -21,7 +21,7 @@ var models = require('./models');
 dotenv.load();
 var INSTAGRAM_CLIENT_ID = process.env.INSTAGRAM_CLIENT_ID;
 var INSTAGRAM_CLIENT_SECRET = process.env.INSTAGRAM_CLIENT_SECRET;
-var INSTAGRAM_CALLBACK_URL = process.env.INSTAGRAM_CALLBACK_URL;
+var INSTAGRAM_CALLBACK_URL = local ? 'http://localhost:3000/auth/instagram/callback' : process.env.INSTAGRAM_CALLBACK_URL;
 Instagram.set('client_id', INSTAGRAM_CLIENT_ID);
 Instagram.set('client_secret', INSTAGRAM_CLIENT_SECRET);
 
@@ -216,6 +216,51 @@ app.get('/igMediaCounts', ensureAuthenticatedInstagram, function(req, res){
   });
 });
 
+app.get('/igFollowers', ensureAuthenticatedInstagram, function(req, res){
+  var query = models.User.where({ig_id : req.user.ig_id});
+  query.findOne(function(err, user){
+	   {
+    if(err) return err;
+    if(user) {
+      Instagram.users.followed_by({
+        user_id : user.ig_id,
+        access_token : user.ig_access_token,
+        complete : function(data) {
+          //console.log(data);
+          var asyncTasks = [];
+          var mediaCounts = [];
+
+          data.forEach(function(item) {
+            asyncTasks.push(function(callback) {
+              Instagram.users.info({
+                user_id : item.id,
+                access_token : user.ig_access_token,
+                complete : function(data) {
+                  mediaCounts.push(data);
+                  callback();
+                },
+                error : function(errorMessage, errorObject, caller) {
+                  console.log(errorMessage, errorObject);
+                  callback();
+                }
+              });
+            });
+          });
+
+          async.parallel(asyncTasks, function(err) {
+            if(err) return console.log(err);
+            console.log('done');
+            return res.json({ users : mediaCounts });
+          });
+        },
+        error : function(errorMessage, errorObject, caller) {
+          console.log(errorMessage, errorObject);
+        }
+      });
+    }
+  });
+});
+
 app.get('/visualization', ensureAuthenticatedInstagram, function (req, res){
   res.render('visualization');
 }); 
@@ -224,6 +269,10 @@ app.get('/visualization', ensureAuthenticatedInstagram, function (req, res){
 app.get('/c3visualization', ensureAuthenticatedInstagram, function (req, res){
   res.render('c3visualization');
 }); 
+
+app.get('/barvisualization', ensureAuthenticated, function(req, res){
+	res.render('myvisualization', { user : req.user });
+});
 
 app.get('/auth/instagram',
   passport.authenticate('instagram'),

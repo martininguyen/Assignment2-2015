@@ -1,0 +1,101 @@
+2015-05-02T03:54:37.222290+00:00 app[web.1]:     at /app/node_modules/passport-instagram/node_modules/passport-oauth/lib/passport-oauth/strategies/oauth2.js:125:38
+2015-05-02T03:54:37.222294+00:00 app[web.1]:     at passBackControl (/app/node_modules/passport-instagram/node_modules/passport-oauth/node_modules/oauth/lib/oauth2.js:124:9)
+2015-05-02T03:56:58.898899+00:00 heroku[router]: at=info method=GET path="/auth/instagram" host=cogsmediacount.herokuapp.com request_id=e5b61546-f44b-4d12-be67-05ef6febf8d0 fwd="66.75.37.251" dyno=web.1 connect=1ms service=3ms status=302 bytes=333
+2015-05-02T03:57:01.885137+00:00 heroku[router]: at=info method=GET path="/auth/instagram" host=cogsmediacount.herokuapp.com request_id=ba170cc0-2e8d-454d-ae50-9c9d24d1b53c fwd="66.75.37.251" dyno=web.1 connect=1ms service=8ms status=302 bytes=333
+2015-05-02T03:57:14.521240+00:00 heroku[router]: at=info method=GET path="/auth/instagram" host=cogsmediacount.herokuapp.com request_id=a7cfa4f2-81a8-4113-ae36-cecf00fee5d0 fwd="66.75.37.251" dyno=web.1 connect=1ms service=5ms status=302 bytes=333
+2015-05-02T03:57:29.412463+00:00 heroku[router]: at=error code=H12 desc="Request timeout" method=GET path="/auth/instagram/callback?code=007ba61c9e8d474bad83acb698236848" host=cogsmediacount.herokuapp.com request_id=51ded33a-7f90-40ad-ad46-ba0ac753f538 fwd="66.75.37.251" dyno=web.1 connect=2ms service=30000ms status=503 bytes=0
+2015-05-02T03:57:32.260230+00:00 heroku[router]: at=error code=H12 desc="Request timeout" method=GET path="/auth/instagram/callback?code=0041ea14561d45ccab9d0244e04902e3" host=cogsmediacount.herokuapp.com request_id=179aeaaf-2449-4a51-90d5-073a5659bd1e fwd="66.75.37.251" dyno=web.1 connect=1ms service=30000ms status=503 bytes=0
+2015-05-02T03:57:44.921621+00:00 heroku[router]: at=error code=H12 desc="Request timeout" method=GET path="/auth/instagram/callback?code=70781f5347924c17bd3b7a39ef429a11" host=cogsmediacount.herokuapp.com request_id=2e6e906b-b8e6-4674-a7dc-3504733359c9 fwd="66.75.37.251" dyno=web.1 connect=6ms service=30001ms status=503 bytes=0
+2015-05-02T04:01:03.519741+00:00 heroku[router]: at=info method=GET path="/auth/instagram/callback?code=70781f5347924c17bd3b7a39ef429a11" host=cogsmediacount.herokuapp.com request_id=ff860b43-01d5-4b8a-be3e-88a27b787ac9 fwd="66.75.37.251" dyno=web.1 connect=3ms service=110ms status=500 bytes=1126
+2015-05-02T04:01:03.504478+00:00 app[web.1]: failed to obtain access token (status: 400 data: {"code": 400, "error_type": "OAuthException", "error_message": "No matching code found."})
+2015-05-02T04:01:03.504483+00:00 app[web.1]:     at /app/node_modules/passport-instagram/node_modules/passport-oauth/lib/passport-oauth/strategies/oauth2.js:125:38
+2015-05-02T04:01:03.504486+00:00 app[web.1]:     at /app/node_modules/passport-instagram/node_modules/passport-oauth/node_modules/oauth/lib/oauth2.js:177:18
+2015-05-02T04:01:03.504488+00:00 app[web.1]:     at passBackControl (/app/node_modules/passport-instagram/node_modules/passport-oauth/node_modules/oauth/lib/oauth2.js:124:9)
+2015-05-02T04:01:03.504489+00:00 app[web.1]:     at IncomingMessage.<anonymous> (/app/node_modules/passport-instagram/node_modules/passport-oauth/node_modules/oauth/lib/oauth2.js:143:7)
+2015-05-02T04:01:03.504491+00:00 app[web.1]:     at IncomingMessage.emit (events.js:117:20)
+2015-05-02T04:01:03.504493+00:00 app[web.1]:     at _stream_readable.js:944:16
+2015-05-02T04:01:03.504494+00:00 app[web.1]:     at process._tickCallback (node.js:448:13)
+2015-05-02T04:01:06.251109+00:00 heroku[router]: at=info method=GET path="/" host=cogsmediacount.herokuapp.com request_id=8880e0f1-b462-468c-b7a3-93b104c2eacb fwd="66.75.37.251" dyno=web.1 connect=1ms service=10ms status=304 bytes=144
+2015-05-02T04:01:06.395316+00:00 heroku[router]: at=info method=GET path="/css/c3.min.css" host=cogsmediacount.herokuapp.com request_id=cccb5033-6dbd-446f-916b-aaa4bd0d3934 fwd="66.75.37.251" dyno=web.1 connect=1ms service=5ms status=304 bytes=236
+2015-05-02T04:01:06.402223+00:00 heroku[router]: at=info method=GET path="/css/bootstrap.css" host=cogsmediacount.herokuapp.com request_id=df369f5c-ad98-40e7-8804-82fb22345511 fwd="66.75.37.251" dyno=web.1 connect=1ms service=4ms status=304 bytes=238
+2015-05-02T04:01:06.499487+00:00 heroku[router]: at=info method=GET path="/css/visualization.css" host=cogsmediacount.herokuapp.com request_id=ad8b62dc-6747-4679-bae6-4f202fa2e549 fwd="66.75.37.251" dyno=web.1 connect=1ms service=2ms status=304 bytes=235
+2015-05-02T04:01:06.394633+00:00 heroku[router]: at=info method=GET path="/css/bootstrap-theme.css" host=cogsmediacount.herokuapp.com request_id=029e0f82-1c6d-46f2-8be2-78794ecd479d fwd="66.75.37.251" dyno=web.1 connect=1ms service=5ms status=304 bytes=237
+2015-05-02T04:01:06.522803+00:00 heroku[router]: at=info method=GET path="/js/d3.min.js" host=cogsmediacount.herokuapp.com request_id=808dfee5-0b5d-4232-b472-c938dce57d02 fwd="66.75.37.251" dyno=web.1 connect=1ms service=3ms status=304 bytes=238
+2015-05-02T04:01:06.527109+00:00 heroku[router]: at=info method=GET path="/js/c3.min.js" host=cogsmediacount.herokuapp.com request_id=b7ad0273-4ec2-411e-b1dc-2bb74e155e48 fwd="66.75.37.251" dyno=web.1 connect=10ms service=8ms status=304 bytes=238
+2015-05-02T04:01:06.505368+00:00 heroku[router]: at=info method=GET path="/js/bootstrap.js" host=cogsmediacount.herokuapp.com request_id=e1bb9819-b20f-4fb2-925d-cd9aed05dabe fwd="66.75.37.251" dyno=web.1 connect=1ms service=2ms status=304 bytes=237
+2015-05-02T04:01:07.733391+00:00 heroku[router]: at=info method=GET path="/auth/instagram" host=cogsmediacount.herokuapp.com request_id=925caeba-56c9-4913-b6bb-5ef156424833 fwd="66.75.37.251" dyno=web.1 connect=2ms service=4ms status=302 bytes=333
+2015-05-02T04:01:38.229396+00:00 heroku[router]: at=error code=H12 desc="Request timeout" method=GET path="/auth/instagram/callback?code=cca7bbb0155d4a73aa3e8c47c65f59ef" host=cogsmediacount.herokuapp.com request_id=2a1899fc-92b8-4f95-93c8-27fa26cc5110 fwd="66.75.37.251" dyno=web.1 connect=1ms service=30000ms status=503 bytes=0
+2015-05-02T04:04:31.724300+00:00 heroku[api]: Set INSTAGRAM_CLIENT_ID, INSTAGRAM_CLIENT_SECRET config vars by martinnguyen0618@gmail.com
+2015-05-02T04:04:31.724300+00:00 heroku[api]: Release v7 created by martinnguyen0618@gmail.com
+2015-05-02T04:04:32.206657+00:00 heroku[web.1]: State changed from up to starting
+2015-05-02T04:04:34.025947+00:00 heroku[web.1]: Starting process with command `npm start`
+2015-05-02T04:04:34.200976+00:00 heroku[web.1]: Stopping all processes with SIGTERM
+2015-05-02T04:04:35.545919+00:00 heroku[web.1]: Process exited with status 143
+2015-05-02T04:04:35.713051+00:00 app[web.1]: Detected 512 MB available memory, 512 MB limit per process (WEB_MEMORY)
+2015-05-02T04:04:35.713080+00:00 app[web.1]: Recommending WEB_CONCURRENCY=1
+2015-05-02T04:04:36.157180+00:00 app[web.1]: 
+2015-05-02T04:04:36.157185+00:00 app[web.1]: > mywebapp@0.0.1 start /app
+2015-05-02T04:04:36.157186+00:00 app[web.1]: > node app.js
+2015-05-02T04:04:36.157188+00:00 app[web.1]: 
+2015-05-02T04:04:36.933591+00:00 app[web.1]: { [Error: ENOENT, no such file or directory '.env'] errno: 34, code: 'ENOENT', path: '.env', syscall: 'open' }
+2015-05-02T04:04:37.061897+00:00 app[web.1]: connection error: { [MongoError: getaddrinfo ENOTFOUND] name: 'MongoError', message: 'getaddrinfo ENOTFOUND' }
+2015-05-02T04:04:37.011581+00:00 app[web.1]: Express server listening on port 45703
+2015-05-02T04:04:37.192106+00:00 heroku[web.1]: State changed from starting to up
+2015-05-02T04:04:38.557849+00:00 heroku[router]: at=info method=GET path="/css/bootstrap-theme.css.map" host=cogsmediacount.herokuapp.com request_id=80c84948-7bf2-4c4f-b573-2d7e8012dbc5 fwd="66.75.37.251" dyno=web.1 connect=1ms service=10ms status=304 bytes=237
+2015-05-02T04:04:38.575181+00:00 heroku[router]: at=info method=GET path="/css/bootstrap.css.map" host=cogsmediacount.herokuapp.com request_id=5047f8b1-f387-4c66-b62e-9b90646e966d fwd="66.75.37.251" dyno=web.1 connect=1ms service=3ms status=304 bytes=238
+2015-05-02T04:04:38.731141+00:00 heroku[router]: at=info method=GET path="/auth/instagram" host=cogsmediacount.herokuapp.com request_id=c9307d57-b74e-4a39-a78f-74965c757302 fwd="66.75.37.251" dyno=web.1 connect=0ms service=5ms status=302 bytes=461
+2015-05-02T04:04:38.830980+00:00 heroku[router]: at=info method=GET path="/auth/instagram/callback?code=b838091ff14348d6b2b0d4ad8c4497bf" host=cogsmediacount.herokuapp.com request_id=54192cc8-57eb-40bc-81d4-ddd3e5dcfddf fwd="66.75.37.251" dyno=web.1 connect=0ms service=213ms status=500 bytes=1250
+2015-05-02T04:04:38.827426+00:00 app[web.1]: failed to obtain access token (status: 400 data: {"code": 400, "error_type": "OAuthException", "error_message": "No matching code found."})
+2015-05-02T04:04:38.827440+00:00 app[web.1]:     at process._tickCallback (node.js:448:13)
+2015-05-02T04:04:38.827432+00:00 app[web.1]:     at /app/node_modules/passport-instagram/node_modules/passport-oauth/node_modules/oauth/lib/oauth2.js:177:18
+2015-05-02T04:04:38.827435+00:00 app[web.1]:     at IncomingMessage.<anonymous> (/app/node_modules/passport-instagram/node_modules/passport-oauth/node_modules/oauth/lib/oauth2.js:143:7)
+2015-05-02T04:04:38.827437+00:00 app[web.1]:     at IncomingMessage.emit (events.js:117:20)
+2015-05-02T04:04:38.827430+00:00 app[web.1]:     at /app/node_modules/passport-instagram/node_modules/passport-oauth/lib/passport-oauth/strategies/oauth2.js:125:38
+2015-05-02T04:04:38.827434+00:00 app[web.1]:     at passBackControl (/app/node_modules/passport-instagram/node_modules/passport-oauth/node_modules/oauth/lib/oauth2.js:124:9)
+2015-05-02T04:04:38.827439+00:00 app[web.1]:     at _stream_readable.js:944:16
+2015-05-02T04:05:12.388421+00:00 heroku[router]: at=error code=H12 desc="Request timeout" method=GET path="/auth/instagram/callback?code=bd2176f2c6f943e7b5290d98238b0122" host=cogsmediacount.herokuapp.com request_id=2313106b-409c-4df0-9203-a72bf1f05263 fwd="66.75.37.251" dyno=web.1 connect=1ms service=30000ms status=503 bytes=0
+2015-05-02T04:05:34.935178+00:00 heroku[router]: at=error code=H12 desc="Request timeout" method=GET path="/auth/instagram/callback?code=cb6b9fe1879342ec85d8c53308d9c350" host=cogsmediacount.herokuapp.com request_id=33e67514-d5ec-4969-8d27-6b16dcdc8813 fwd="66.75.37.251" dyno=web.1 connect=0ms service=30000ms status=503 bytes=0
+2015-05-02T04:06:39.707819+00:00 heroku[router]: at=info method=GET path="/auth/instagram/callback" host=cogsmediacount.herokuapp.com request_id=34083ecd-8f93-41df-851f-a6dd57d30864 fwd="69.171.237.118" dyno=web.1 connect=1ms service=5ms status=302 bytes=459
+2015-05-02T04:06:41.329694+00:00 heroku[router]: at=info method=GET path="/auth/instagram" host=cogsmediacount.herokuapp.com request_id=9043b02e-8e32-4e13-ac48-e3d73a31f615 fwd="69.171.235.117" dyno=web.1 connect=1ms service=4ms status=302 bytes=457
+2015-05-02T04:06:41.334378+00:00 heroku[router]: at=info method=GET path="/auth/instagram/callback" host=cogsmediacount.herokuapp.com request_id=9120050d-a7d2-48ce-b532-12e163e35c38 fwd="69.171.235.117" dyno=web.1 connect=2ms service=4ms status=302 bytes=461
+2015-05-02T04:06:45.344189+00:00 heroku[router]: at=info method=GET path="/auth/instagram/callback&client_id=019f1b9f26294fe29d9a5562263dbf7a" host=cogsmediacount.herokuapp.com request_id=fb19f3a8-550f-4241-88df-bfb72a87d262 fwd="69.171.235.114" dyno=web.1 connect=1ms service=7ms status=404 bytes=405
+2015-05-02T04:07:22.949871+00:00 heroku[router]: at=info method=GET path="/auth/instagram/callback" host=cogsmediacount.herokuapp.com request_id=a9a42c52-e1b0-44e8-baf5-97f70469c56c fwd="75.80.48.60" dyno=web.1 connect=1ms service=3ms status=302 bytes=459
+2015-05-02T04:07:25.535482+00:00 heroku[router]: at=info method=GET path="/auth/instagram/callback&client_id=019f1b9f26294fe29d9a5562263dbf7a" host=cogsmediacount.herokuapp.com request_id=ed31dca7-1d36-413a-9745-be8e224c0e83 fwd="173.252.79.114" dyno=web.1 connect=0ms service=5ms status=404 bytes=409
+2015-05-02T04:07:56.000289+00:00 heroku[router]: at=error code=H12 desc="Request timeout" method=GET path="/auth/instagram/callback?code=7167706bec7143d285ed4dbb4d8b829d" host=cogsmediacount.herokuapp.com request_id=e7265826-0470-4254-8d57-f2080ba9d47b fwd="75.80.48.60" dyno=web.1 connect=1ms service=30000ms status=503 bytes=0
+2015-05-02T04:08:03.388498+00:00 heroku[web.1]: State changed from up to starting
+2015-05-02T04:08:07.295829+00:00 heroku[web.1]: Stopping all processes with SIGTERM
+2015-05-02T04:08:09.213607+00:00 heroku[web.1]: Process exited with status 143
+2015-05-02T04:08:20.347296+00:00 heroku[web.1]: Starting process with command `npm start`
+2015-05-02T04:08:22.349497+00:00 app[web.1]: Detected 512 MB available memory, 512 MB limit per process (WEB_MEMORY)
+2015-05-02T04:08:22.349519+00:00 app[web.1]: Recommending WEB_CONCURRENCY=1
+2015-05-02T04:08:22.982037+00:00 app[web.1]: > node app.js
+2015-05-02T04:08:22.982030+00:00 app[web.1]: 
+2015-05-02T04:08:22.982039+00:00 app[web.1]: 
+2015-05-02T04:08:22.982036+00:00 app[web.1]: > mywebapp@0.0.1 start /app
+2015-05-02T04:08:24.564972+00:00 app[web.1]: connection error: { [MongoError: getaddrinfo ENOTFOUND] name: 'MongoError', message: 'getaddrinfo ENOTFOUND' }
+2015-05-02T04:08:24.417560+00:00 app[web.1]: { [Error: ENOENT, no such file or directory '.env'] errno: 34, code: 'ENOENT', path: '.env', syscall: 'open' }
+2015-05-02T04:08:24.495762+00:00 app[web.1]: Express server listening on port 10263
+2015-05-02T04:08:24.635167+00:00 heroku[web.1]: State changed from starting to up
+2015-05-02T04:08:25.363756+00:00 heroku[router]: at=info method=GET path="/" host=cogsmediacount.herokuapp.com request_id=e17541a9-4e46-4a97-8eb2-5132801bd921 fwd="66.75.37.251" dyno=web.1 connect=3ms service=48ms status=200 bytes=1493
+2015-05-02T04:08:25.675564+00:00 heroku[router]: at=info method=GET path="/js/bootstrap.js" host=cogsmediacount.herokuapp.com request_id=784079c6-9b2d-45ee-ac33-541775a4a915 fwd="66.75.37.251" dyno=web.1 connect=1ms service=6ms status=304 bytes=237
+2015-05-02T04:08:25.575315+00:00 heroku[router]: at=info method=GET path="/css/bootstrap.css" host=cogsmediacount.herokuapp.com request_id=2ce285ff-a6e8-48ac-8592-01715e951807 fwd="66.75.37.251" dyno=web.1 connect=2ms service=7ms status=304 bytes=238
+2015-05-02T04:08:25.676266+00:00 heroku[router]: at=info method=GET path="/css/visualization.css" host=cogsmediacount.herokuapp.com request_id=43c9c72e-14f7-4202-ad55-235f671403c4 fwd="66.75.37.251" dyno=web.1 connect=1ms service=9ms status=304 bytes=235
+2015-05-02T04:08:25.684652+00:00 heroku[router]: at=info method=GET path="/css/c3.min.css" host=cogsmediacount.herokuapp.com request_id=0441ab25-c2a2-4d7a-8d48-d3c959701043 fwd="66.75.37.251" dyno=web.1 connect=1ms service=5ms status=304 bytes=236
+2015-05-02T04:08:25.680101+00:00 heroku[router]: at=info method=GET path="/js/c3.min.js" host=cogsmediacount.herokuapp.com request_id=7e18c0b1-6a07-471b-b0a6-a00999f556e4 fwd="66.75.37.251" dyno=web.1 connect=1ms service=5ms status=304 bytes=238
+2015-05-02T04:08:25.673709+00:00 heroku[router]: at=info method=GET path="/css/bootstrap-theme.css" host=cogsmediacount.herokuapp.com request_id=56a96412-0066-4691-a9c9-bd7d321d9fcb fwd="66.75.37.251" dyno=web.1 connect=9ms service=4ms status=304 bytes=237
+2015-05-02T04:08:25.690782+00:00 heroku[router]: at=info method=GET path="/js/d3.min.js" host=cogsmediacount.herokuapp.com request_id=e5042afe-48ab-48d4-817b-74f57fdfd44b fwd="66.75.37.251" dyno=web.1 connect=5ms service=11ms status=304 bytes=238
+2015-05-02T04:08:26.098657+00:00 heroku[router]: at=info method=GET path="/auth/instagram/callback?code=cb6b9fe1879342ec85d8c53308d9c350" host=cogsmediacount.herokuapp.com request_id=934c361e-85b2-46b9-b626-4b4f8753a3c9 fwd="66.75.37.251" dyno=web.1 connect=2ms service=75ms status=500 bytes=1252
+2015-05-02T04:08:26.108736+00:00 app[web.1]:     at process._tickCallback (node.js:448:13)
+2015-05-02T04:08:26.108726+00:00 app[web.1]:     at /app/node_modules/passport-instagram/node_modules/passport-oauth/lib/passport-oauth/strategies/oauth2.js:125:38
+2015-05-02T04:08:26.108730+00:00 app[web.1]:     at passBackControl (/app/node_modules/passport-instagram/node_modules/passport-oauth/node_modules/oauth/lib/oauth2.js:124:9)
+2015-05-02T04:08:26.108735+00:00 app[web.1]:     at _stream_readable.js:944:16
+2015-05-02T04:08:26.108734+00:00 app[web.1]:     at IncomingMessage.emit (events.js:117:20)
+2015-05-02T04:08:26.108731+00:00 app[web.1]:     at IncomingMessage.<anonymous> (/app/node_modules/passport-instagram/node_modules/passport-oauth/node_modules/oauth/lib/oauth2.js:143:7)
+2015-05-02T04:08:26.108721+00:00 app[web.1]: failed to obtain access token (status: 400 data: {"code": 400, "error_type": "OAuthException", "error_message": "No matching code found."})
+2015-05-02T04:08:26.108728+00:00 app[web.1]:     at /app/node_modules/passport-instagram/node_modules/passport-oauth/node_modules/oauth/lib/oauth2.js:177:18
+2015-05-02T04:08:26.338788+00:00 heroku[router]: at=info method=GET path="/" host=cogsmediacount.herokuapp.com request_id=00359b99-e15e-4e03-b80e-fbc8898e7d50 fwd="66.75.37.251" dyno=web.1 connect=2ms service=23ms status=200 bytes=1493
+2015-05-02T04:08:27.292877+00:00 heroku[router]: at=info method=GET path="/" host=cogsmediacount.herokuapp.com request_id=dca10c9c-09b3-4dd1-a568-c8c00f27598d fwd="66.75.37.251" dyno=web.1 connect=3ms service=158ms status=304 bytes=272
+2015-05-02T04:08:27.670073+00:00 heroku[router]: at=info method=GET path="/auth/instagram" host=cogsmediacount.herokuapp.com request_id=af0e0721-5229-4544-81c5-5231d3b40f6f fwd="66.75.37.251" dyno=web.1 connect=1ms service=11ms status=302 bytes=333
+2015-05-02T04:08:55.932156+00:00 heroku[router]: at=error code=H12 desc="Request timeout" method=GET path="/auth/instagram/callback?code=55d63a4cc48a404686641647e5bbc48d" host=cogsmediacount.herokuapp.com request_id=b6a589e8-59a7-43c0-9e6e-de8897218cc9 fwd="66.75.37.251" dyno=web.1 connect=1ms service=30000ms status=503 bytes=0
+2015-05-02T04:08:56.510211+00:00 heroku[router]: at=error code=H12 desc="Request timeout" method=GET path="/auth/instagram/callback?code=2fdffc73582849f3ae28003f561e6919" host=cogsmediacount.herokuapp.com request_id=38ea66ad-2b71-41ca-aad6-ed9d19ee94b6 fwd="66.75.37.251" dyno=web.1 connect=2ms service=30000ms status=503 bytes=0
+2015-05-02T04:08:58.241433+00:00 heroku[router]: at=error code=H12 desc="Request timeout" method=GET path="/auth/instagram/callback?code=9c44247daea546e1a49ace743f2b27d8" host=cogsmediacount.herokuapp.com request_id=a6eb71bc-b952-47b1-869f-708116de85bb fwd="66.75.37.251" dyno=web.1 connect=2ms service=30001ms status=503 bytes=0
