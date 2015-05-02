@@ -1,12 +1,12 @@
 (function() {
   var spinnerVisible = false;
-  function showProgress() {
+  function show() {
       if (!spinnerVisible) {
           $("div#spinner").fadeIn("fast");
           spinnerVisible = true;
       }
   }
-  function hideProgress() {
+  function hide() {
       if (spinnerVisible) {
           var spinner = $("div#spinner");
           spinner.stop();
@@ -14,7 +14,7 @@
           spinnerVisible = false;
       }
   }
-  showProgress();
+  show();
   $.getJSON( '/igMediaCounts')
     .done(function( data ) {
       var yCounts = data.users.map(function(item){
@@ -31,6 +31,6 @@
           ]
         }
       });
-	  hideProgress();
+	  hide();
     });
 })();
